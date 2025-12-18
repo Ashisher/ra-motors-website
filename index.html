@@ -6,32 +6,42 @@
   <meta name="description" content="RA Motors Kasganj Road – Authorized Tata Motors Cars Showroom. Book Test Drive, Get Best Offers, Finance & Service." />
   <meta name="keywords" content="RA Motors, Tata Motors Kasganj, Tata Showroom Kasganj Road, Tata Nexon Kasganj" />
   <style>
-    body {margin:0;font-family:Arial, Helvetica, sans-serif;background:#f5f5f5;color:#222;}
-    header {background:#0b3c5d;color:#fff;padding:20px;text-align:center;}
-    nav {background:#fff;display:flex;justify-content:center;gap:20px;padding:10px;box-shadow:0 2px 5px rgba(0,0,0,0.1);}    
-    nav a {text-decoration:none;color:#0b3c5d;font-weight:bold;}
-    .hero {background:#1d70b8;color:#fff;padding:50px 20px;text-align:center;}
-    .section {padding:40px 20px;max-width:1000px;margin:auto;}
-    .cards {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
-    .card {background:#fff;padding:20px;border-radius:10px
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f5f5f5;color:#222}
+    header{background:#0b3c5d;color:#fff;padding:20px;text-align:center;position:relative}
+    nav{background:#fff;display:flex;justify-content:center;gap:20px;padding:10px;box-shadow:0 2px 5px rgba(0,0,0,.1)}
+    nav a{text-decoration:none;color:#0b3c5d;font-weight:bold}
+    .hero{background:#1d70b8;color:#fff;padding:50px 20px;text-align:center}
+    .section{padding:40px 20px;max-width:1000px;margin:auto}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+    .card{background:#fff;padding:20px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+    footer{background:#0b3c5d;color:#fff;text-align:center;padding:20px}
+    .btn{display:inline-block;background:#f9b233;color:#000;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:bold}
+    .lang{position:absolute;top:15px;right:15px}
+    .lang button{margin-left:5px}
+    .wa{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:12px 16px;border-radius:50px;text-decoration:none;font-weight:bold;box-shadow:0 4px 10px rgba(0,0,0,.3);z-index:999}
+  </style>
 </head>
 <body><header>
-  <h1>RA Motors</h1>
-  <p>Authorized Tata Motors Cars Showroom – Kasganj Road</p>
+  <div class="lang">
+    <button onclick="setLang('hi')">हिंदी</button>
+    <button onclick="setLang('en')">English</button>
+  </div>
+  <h1 id="title">RA Motors</h1>
+  <p id="subtitle">Authorized Tata Motors Cars Showroom – Kasganj Road</p>
 </header><nav>
   <a href="#about">About</a>
   <a href="#models">Cars</a>
   <a href="#services">Services</a>
   <a href="#contact">Contact</a>
-</nav><!-- WhatsApp Floating Button --><a href="https://wa.me/919000012345" target="_blank" style="position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:12px 16px;border-radius:50px;text-decoration:none;font-weight:bold;box-shadow:0 4px 10px rgba(0,0,0,0.3);z-index:999;">💬 WhatsApp</a>
+</nav><a class="wa" href="https://wa.me/919000012345" target="_blank">💬 WhatsApp</a>
 
 <section class="hero">
   <h2>Welcome to RA Motors</h2>
-  <p>Tata Motors Authorized Car Dealer | Trusted Service & Best Offers</p>
+  <p>Tata Motors Authorized Dealer | Best Offers & Trusted Service</p>
   <a class="btn" href="#contact">Book Test Drive</a>
 </section><section id="about" class="section">
   <h2>About Us</h2>
-  <p>RA Motors Kasganj Road par sthit Tata Motors ka authorized showroom hai. Yahan aapko Tata ki latest cars, finance options, exchange offers aur reliable after-sales service milti hai.</p>
+  <p>RA Motors Kasganj Road par sthit Tata Motors ka authorized showroom hai. Yahan aapko Tata ki latest cars, finance options aur reliable service milti hai.</p>
 </section><section id="models" class="section">
   <h2>Our Cars</h2>
   <div class="cards">
@@ -41,45 +51,59 @@
     <div class="card">Tata Tiago</div>
     <div class="card">Tata Harrier</div>
     <div class="card">Tata Safari</div>
+  </div>  <h2 style="margin-top:40px;">📸 Showroom Gallery</h2>
+  <div class="cards">
+    <div class="card">Showroom Front</div>
+    <div class="card">Delivery Area</div>
+    <div class="card">Service Workshop</div>
   </div>
 </section><section id="services" class="section">
   <h2>Our Services</h2>
   <div class="cards">
     <div class="card">New Car Sales</div>
     <div class="card">Test Drive Facility</div>
-    <div class="card">Car Finance & Insurance</div>
+    <div class="card">Finance & Insurance</div>
     <div class="card">Authorized Service Center</div>
   </div>
 </section><section id="contact" class="section">
   <h2>Contact Us</h2>
   <p><strong>Address:</strong> Tata Motors Cars Showroom – RA Motors, Kasganj Road</p>
-  <p><strong>Opening Time:</strong> 10:00 AM – 7:00 PM</p>
+  <p><strong>Timing:</strong> 10:00 AM – 7:00 PM</p>
   <p><strong>Phone:</strong> +91 90000 12345</p>
   <p><strong>Email:</strong> ramotors.demo@gmail.com</p>  <h3>📍 Location</h3>
-  <iframe src="https://www.google.com/maps?q=Kasganj%20Road%20Tata%20Motors&output=embed" width="100%" height="300" style="border:0;border-radius:10px;" loading="lazy"></iframe>  <h3 style="margin-top:30px;">🚗 Book a Test Drive</h3>
-  <form onsubmit="sendWhatsApp(); return false;" style="background:#fff;padding:20px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.1);max-width:500px;">
-    <input id="name" type="text" placeholder="Your Name" required style="width:100%;padding:10px;margin-bottom:10px;" />
-    <input id="phone" type="tel" placeholder="Mobile Number" required style="width:100%;padding:10px;margin-bottom:10px;" />
-    <select id="car" style="width:100%;padding:10px;margin-bottom:10px;">
+  <iframe src="https://www.google.com/maps?q=Kasganj%20Road%20Tata%20Motors&output=embed" width="100%" height="300" style="border:0;border-radius:10px" loading="lazy"></iframe>  <h3 style="margin-top:30px;">🚗 Book a Test Drive</h3>
+  <form onsubmit="sendWhatsApp();return false;" style="background:#fff;padding:20px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.1);max-width:500px">
+    <input id="name" type="text" placeholder="Your Name" required style="width:100%;padding:10px;margin-bottom:10px" />
+    <input id="phone" type="tel" placeholder="Mobile Number" required style="width:100%;padding:10px;margin-bottom:10px" />
+    <select id="car" style="width:100%;padding:10px;margin-bottom:10px">
       <option>Select Car Model</option>
       <option>Tata Nexon</option>
       <option>Tata Punch</option>
       <option>Tata Altroz</option>
       <option>Tata Tiago</option>
     </select>
-    <button type="submit" style="background:#1d70b8;color:#fff;padding:12px 20px;border:none;border-radius:8px;font-weight:bold;">Send on WhatsApp</button>
-  </form>  <script>
-    function sendWhatsApp() {
-      var name = document.getElementById('name').value;
-      var phone = document.getElementById('phone').value;
-      var car = document.getElementById('car').value;
-      var msg = `Test Drive Request%0AName: ${name}%0AMobile: ${phone}%0ACar: ${car}`;
-      window.open(`https://wa.me/919000012345?text=${msg}`, '_blank');
-    }
-  </script>  <div style="margin-top:30px;">
-    <a href="https://www.google.com/search?q=RA+Motors+Kasganj+Road+Tata+Motors+review" target="_blank" class="btn">⭐ Give Google Review</a>
+    <button class="btn" type="submit">Send on WhatsApp</button>
+  </form>  <div style="margin-top:25px;">
+    <a class="btn" target="_blank" href="https://www.google.com/search?q=RA+Motors+Kasganj+Road+Tata+Motors+review">⭐ Give Google Review</a>
   </div>
 </section><footer>
   <p>© 2025 RA Motors | Authorized Tata Motors Dealer</p>
-</footer></body>
-</html> 
+</footer><script>
+function sendWhatsApp(){
+  var n=document.getElementById('name').value;
+  var p=document.getElementById('phone').value;
+  var c=document.getElementById('car').value;
+  var msg=`Test Drive Request%0AName: ${n}%0AMobile: ${p}%0ACar: ${c}`;
+  window.open(`https://wa.me/919000012345?text=${msg}`,'_blank');
+}
+function setLang(l){
+  if(l==='en'){
+    document.getElementById('title').innerText='RA Motors';
+    document.getElementById('subtitle').innerText='Authorized Tata Motors Cars Showroom – Kasganj Road';
+  }else{
+    document.getElementById('title').innerText='आर ए मोटर्स';
+    document.getElementById('subtitle').innerText='अधिकृत टाटा मोटर्स कार शोरूम – कासगंज रोड';
+  }
+}
+</script></body>
+</html>
