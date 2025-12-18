@@ -1,24 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>RA Motors – Tata Motors Dealer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f5f5f5}
-    header{background:#0b3c5d;color:#fff;padding:15px}
-    nav a{color:#fff;margin-right:15px;text-decoration:none;font-weight:bold}
-    .hero{background:#1d70b8;color:#fff;padding:40px 20px;text-align:center}
-    .btn{background:#f5a623;color:#000;padding:10px 16px;border-radius:5px;
-         text-decoration:none;font-weight:bold;display:inline-block}
-    .section{padding:30px 15px;max-width:1100px;margin:auto}
-    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
-    .card{background:#fff;padding:15px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.1)}
-    .card img{width:100%;border-radius:6px}
-    footer{background:#222;color:#fff;padding:20px;text-align:center}
-    .wa-float{position:fixed;bottom:20px;right:20px;background:#25D366;
-      color:#fff;padding:12px 16px;border-radius:50px;text-decoration:none;font-weight:bold}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RA Motors | Tata Motors Authorized Dealer</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #333;
+}
+header {
+  background: #0b4d7a;
+  color: white;
+  padding: 15px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.hero {
+  background: #1f6fa5;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+.hero button {
+  background: #ffb300;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+section {
+  padding: 30px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.card button {
+  margin-top: 10px;
+  background: #ffb300;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.highlight {
+  background: #0b4d7a;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+.whatsapp {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #25d366;
+  color: white;
+  padding: 12px 15px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+}
+</style>
 </head>
 
 <body>
@@ -32,63 +110,84 @@
   </nav>
 </header>
 
-<section class="hero">
+<div class="hero">
   <h1>Welcome to RA Motors</h1>
   <p>Tata Motors Authorized Passenger Vehicle Dealer</p>
-  <a class="btn" href="https://wa.me/918192896716?text=Test%20Drive%20Request">Book Test Drive</a>
-</section>
+  <button onclick="window.open('https://wa.me/918192896716')">Book Test Drive</button>
+</div>
 
-<section id="about" class="section">
+<section id="about">
   <h2>About Us</h2>
-  <p><strong>RA Motors</strong> is an authorized Tata Motors passenger vehicle dealership
-     located on Kasganj Road. We are committed to delivering a reliable, transparent,
-     and customer-focused car buying experience.</p>
-  <p>Customers can explore the full range of Tata Motors cars, book test drives,
-     and receive professional guidance along with car insurance and authorized service support.</p>
+  <p>
+    RA Motors is an authorized Tata Motors passenger vehicle dealership located on Kasganj Road.
+    We are committed to delivering a reliable, transparent, and customer-focused car buying experience.
+    Customers can explore the complete range of Tata Motors cars, book test drives, and receive
+    professional guidance along with car insurance and authorized service support.
+  </p>
 </section>
 
-<!-- SIERRA HIGHLIGHT -->
-<section class="section">
-  <div style="background:#0b3c5d;color:#fff;padding:25px;border-radius:12px">
-    <h2>⭐ Highlight Model: New Tata Sierra</h2>
-    <p>Iconic Tata Sierra is coming soon with bold design and premium road presence.</p>
-    <img src="images/sierra/sierra-main.jpg" alt="New Tata Sierra">
-    <br><br>
-    <a class="btn"
-       href="https://wa.me/918192896716?text=Sierra%20Enquiry%20from%20RA%20Motors">
-       🚗 Enquiry for Sierra
-    </a>
-    <p style="font-size:13px;margin-top:8px">📌 Sierra enquiries are tracked separately</p>
-  </div>
+<section class="highlight">
+  <h2>⭐ Highlight Model: New Tata Sierra</h2>
+  <p>
+    The iconic Tata Sierra is making a powerful comeback with bold design, premium comfort,
+    and strong road presence.
+  </p>
+  <img src="images/sierra/sierra-main.jpg" alt="New Tata Sierra" style="width:100%;max-width:600px;border-radius:10px;">
+  <br><br>
+  <button onclick="window.open('https://wa.me/918192896716')">Enquiry for Sierra</button>
+  <p style="font-size:12px;">Sierra enquiries are tracked separately</p>
 </section>
 
-<section id="cars" class="section">
+<section id="cars">
   <h2>Tata Motors Passenger Cars</h2>
   <div class="cards">
-    <div class="card"><h3>Tata Tiago</h3><img src="https://via.placeholder.com/300x180"><br><br>
-      <a class="btn" href="https://wa.me/918192896716?text=Enquiry%20for%20Tata%20Tiago">Enquiry</a></div>
 
-    <div class="card"><h3>Tata Tigor</h3><img src="https://via.placeholder.com/300x180"><br><br>
-      <a class="btn" href="https://wa.me/918192896716?text=Enquiry%20for%20Tata%20Tigor">Enquiry</a></div>
+    <div class="card">
+      <img src="images/tiago/tiago-main.jpg" alt="Tata Tiago">
+      <h3>Tata Tiago</h3>
+      <button onclick="window.open('https://wa.me/918192896716')">Enquiry</button>
+    </div>
 
-    <div class="card"><h3>Tata Altroz</h3><img src="https://via.placeholder.com/300x180"><br><br>
-      <a class="btn" href="https://wa.me/918192896716?text=Enquiry%20for%20Tata%20Altroz">Enquiry</a></div>
+    <div class="card">
+      <img src="images/tigor/tigor-main.jpg" alt="Tata Tigor">
+      <h3>Tata Tigor</h3>
+      <button onclick="window.open('https://wa.me/918192896716')">Enquiry</button>
+    </div>
 
-    <div class="card"><h3>Tata Punch</h3><img src="https://via.placeholder.com/300x180"><br><br>
-      <a class="btn" href="https://wa.me/918192896716?text=Enquiry%20for%20Tata%20Punch">Enquiry</a></div>
+    <div class="card">
+      <img src="images/altroz/altroz-main.jpg" alt="Tata Altroz">
+      <h3>Tata Altroz</h3>
+      <button onclick="window.open('https://wa.me/918192896716')">Enquiry</button>
+    </div>
 
-    <div class="card"><h3>Tata Nexon</h3><img src="https://via.placeholder.com/300x180"><br><br>
-      <a class="btn" href="https://wa.me/918192896716?text=Enquiry%20for%20Tata%20Nexon">Enquiry</a></div>
+    <div class="card">
+      <img src="images/punch/punch-main.jpg" alt="Tata Punch">
+      <h3>Tata Punch</h3>
+      <button onclick="window.open('https://wa.me/918192896716')">Enquiry</button>
+    </div>
 
-    <div class="card"><h3>Tata Harrier</h3><img src="https://via.placeholder.com/300x180"><br><br>
-      <a class="btn" href="https://wa.me/918192896716?text=Enquiry%20for%20Tata%20Harrier">Enquiry</a></div>
+    <div class="card">
+      <img src="images/nexon/nexon-main.jpg" alt="Tata Nexon">
+      <h3>Tata Nexon</h3>
+      <button onclick="window.open('https://wa.me/918192896716')">Enquiry</button>
+    </div>
 
-    <div class="card"><h3>Tata Safari</h3><img src="https://via.placeholder.com/300x180"><br><br>
-      <a class="btn" href="https://wa.me/918192896716?text=Enquiry%20for%20Tata%20Safari">Enquiry</a></div>
+    <div class="card">
+      <img src="images/harrier/harrier-main.jpg" alt="Tata Harrier">
+      <h3>Tata Harrier</h3>
+      <button onclick="window.open('https://wa.me/918192896716')">Enquiry</button>
+    </div>
+
+    <div class="card">
+      <img src="images/safari/safari-main.jpg" alt="Tata Safari">
+      <h3>Tata Safari</h3>
+      <button onclick="window.open('https://wa.me/918192896716')">Enquiry</button>
+    </div>
+
   </div>
 </section>
 
-<section id="services" class="section">
+<section id="services">
   <h2>Our Services</h2>
   <ul>
     <li>New Car Sales</li>
@@ -98,7 +197,7 @@
   </ul>
 </section>
 
-<section id="contact" class="section">
+<section id="contact">
   <h2>Contact</h2>
   <p>📞 +91 81928 96716</p>
   <p>📧 backofficeramotors@gmail.com</p>
@@ -108,7 +207,9 @@
   © RA Motors | Tata Motors Authorized Dealer
 </footer>
 
-<a class="wa-float" href="https://wa.me/918192896716">WhatsApp</a>
+<a class="whatsapp" href="https://wa.me/918192896716" target="_blank">
+  WhatsApp
+</a>
 
 </body>
 </html>
